@@ -42,9 +42,9 @@ export class ComponentsComponent implements OnInit {
             });
         }
 
-        const id = setInterval(() => {
-            this.changeImage();
-         }, 15000);
+        // const id = setInterval(() => {
+        //     this.changeImage();
+        //  }, 15000);
          
     }
 
