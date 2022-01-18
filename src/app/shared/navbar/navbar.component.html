@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-translate">
             
-                <img src="assets/img/Vertical_color_y.png" alt="">
+                <img src="assets/img/vampire-wars-logo.png" alt="">
             
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
@@ -25,26 +25,24 @@
                     <a href="" class="nav-link" target="_blank"><i></i> | </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Discord" data-placement="above" href="#" target="_blank">
+                        <img src="assets/img/discord.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Telegram" data-placement="above" href="#" target="_blank">
+                        <img src="assets/img/telegram.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="above" href="#" target="_blank">
+                        <img src="assets/img/twitter.png" alt="">
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
                     <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="content-center" href="#" target="_blank">
                         <i class="fa fa-twitter"></i>
                         <p class="d-lg-none">Twitter</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Discord" data-placement="above" href="#" target="_blank" img src="assets/img/discord1.png">
-                        <img src="assets/img/discord1.png" alt="">
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="#" target="_blank">
-                        <i class="fa fa-facebook-square"></i>
-                        <p class="d-lg-none">Facebook</p>
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="#" target="_blank">
-                        <i class="fa fa-instagram"></i>
-                        <p class="d-lg-none">Instagram</p>
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isHome()">
