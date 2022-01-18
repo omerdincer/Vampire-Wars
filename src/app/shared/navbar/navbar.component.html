@@ -1,7 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            <a class="navbar-brand">Vampire Wars</a>
+            
+                <img src="assets/img/Vertical_color_y.png" alt="">
+            
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -11,9 +13,26 @@
         <div class="navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="#" target="_blank">
+                    <a href="" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a href="" class="nav-link" target="_blank"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a href="" class="nav-link" target="_blank" data-placement="bottom" ><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a href="" class="nav-link" target="_blank"><i></i> | </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="content-center" href="#" target="_blank">
                         <i class="fa fa-twitter"></i>
                         <p class="d-lg-none">Twitter</p>
+                    </a>
+                </li>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Follow us on Discord" data-placement="above" href="#" target="_blank" img src="assets/img/discord1.png">
+                        <img src="assets/img/discord1.png" alt="">
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
