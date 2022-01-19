@@ -181,8 +181,9 @@
         .nav-item .nav-link:hover,
         .nav-item .nav-link:focus{
             background-color: transparent;
-            color:#ff0000;
+            color: #ff0000;
             @include opacity(1);
+            filter: invert(34%) sepia(100%) saturate(7496%) hue-rotate(355deg) brightness(115%) contrast(121%);
         }
         .nav .nav-item a.btn:hover{
             background-color: transparent;
