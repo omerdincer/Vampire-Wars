@@ -184,7 +184,7 @@
             color: #ff0000;
             @include opacity(1);
             filter: invert(34%) sepia(100%) saturate(7496%) hue-rotate(355deg) brightness(115%) contrast(121%);
-            animation: hoplaorg 1.5s ease ,;
+            animation: hoplaorg 1.5s ease infinite,;
         }
         .nav .nav-item a.btn:hover{
             background-color: transparent;
