@@ -184,6 +184,7 @@
             color: #ff0000;
             @include opacity(1);
             filter: invert(34%) sepia(100%) saturate(7496%) hue-rotate(355deg) brightness(115%) contrast(121%);
+            animation: hoplaorg 1.5s ease ,;
         }
         .nav .nav-item a.btn:hover{
             background-color: transparent;
@@ -221,6 +222,26 @@
 
 }
 
+@keyframes hopla {
+    0% { 
+        transform: skewX( 0deg ) translateY(-100px); 
+    }
+    60% { 
+        transform: translateY(0px); 
+    }
+    100% { 
+        transform: skew( 0deg ); 
+    }
+  }
+
+@keyframes hoplaorg {
+    0% { transform: scale( .75 ); }
+    20% { transform: scale( 1 ); }
+    40% { transform: scale( .75 ); }
+    60% { transform: scale( 1 ); }
+    80% { transform: scale( .75 ); }
+    100% { transform: scale( .75 ); }
+}
 .nav-open .nav .caret{
     border-bottom-color: $white-color;
     border-top-color: $white-color;
