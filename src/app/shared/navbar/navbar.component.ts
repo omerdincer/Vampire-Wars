@@ -71,4 +71,12 @@ export class NavbarComponent implements OnInit {
             return false;
         }
     }
+
+    isSidebarOpen() {
+        if (this.sidebarVisible === false) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }

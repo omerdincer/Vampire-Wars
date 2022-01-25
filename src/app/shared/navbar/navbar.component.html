@@ -1,9 +1,9 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="500">
     <div class="container">
         <div class="navbar-translate">
-            
-                <img src="assets/img/vampire-wars-logo.png" alt="">
-            
+
+            <img src="assets/img/vampire-wars-logo.png" alt="">
+
             <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" (click)="sidebarToggle()">
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
@@ -21,20 +21,29 @@
                 <li class="nav-item" *ngIf="!isDocumentation()">
                     <a href="" class="nav-link" target="_blank"><i></i> White Paper</a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Discord" data-placement="content-center" href="#" target="_blank">
-                        <img src="assets/img/discord.png" alt="">
-                    </a>
+                <li class="nav-item" *ngIf="!isSidebarOpen()">
+                    <a href="" class="nav-link" target="_blank"><i></i> | </a>
                 </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Telegram" data-placement="content-center" href="#" target="_blank">
-                        <img src="assets/img/telegram.png" alt="">
-                    </a>
-                </li>
-                <li class="nav-item" *ngIf="!isDocumentation()">
-                    <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="content-center" href="#" target="_blank">
-                        <img src="assets/img/twitter.png" alt="">
-                    </a>
+                <div class="d-flex justify-content-end">
+                    <li class="nav-item" *ngIf="!isDocumentation()">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Discord" data-placement="content-center" href="#" target="_blank">
+                            <img src="assets/img/discord.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item" *ngIf="!isDocumentation()">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Telegram" data-placement="content-center" href="#" target="_blank">
+                            <img src="assets/img/telegram.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item" *ngIf="!isDocumentation()">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="content-center" href="#" target="_blank">
+                            <img src="assets/img/twitter.png" alt="">
+                        </a>
+                    </li>
+                </div>
+                <li class="nav-item" *ngIf="isSidebarOpen()">
+                    <i>© 2021 Copyright</i> <br>
+                    <i>All rights reserved</i>
                 </li>
                 <li class="nav-item" *ngIf="!isHome()">
                     <a [routerLink]="['/home']" *ngIf="!isDocumentation()" class="nav-link"><i class="nc-icon nc-layout-11"></i>Components</a>
